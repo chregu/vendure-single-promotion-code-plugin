@@ -10,10 +10,20 @@ And then adjust the code until it works ;)
 
 If someone wants to make a "out of the box" working plugin out of this, feel free to take it over.
 
+Also add this to your vendure-config.ts
+
+```
+promotionOptions: {
+        promotionConditions: [somecustomerPromotionCondition, ...defaultPromotionConditions],
+        promotionActions: [somecustomerPromotionAction, ...defaultPromotionActions],
+    },
+```
 
 Inspired from this
 
 https://vendure-ecommerce.slack.com/archives/CKYMF0ZTJ/p1674654273211489?thread_ts=1674653027.893989&cid=CKYMF0ZTJ
+
+The graphQL API is in `api/api-extensions.ts`
 
 Question:
 ```
